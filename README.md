@@ -27,4 +27,4 @@ Nutrition Analysis is an application designed to analyze any recipe and get a de
   - MVVM Architecture (View - DataBinding - ViewModel - Model)
   - Repository pattern
   - Clean Architecture approach.
-![final-architecture](https://user-images.githubusercontent.com/7644709/94259993-b2691b80-ff2f-11ea-8bff-cc4ed3c8b6d9.png)
+![final-architecture](https://user-images.githubusercontent.com/7644709/125865695-fb0febb2-5329-4347-80ab-645d86e951c2.png))
