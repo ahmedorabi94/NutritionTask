@@ -39,7 +39,7 @@ class IngredientListViewModel @Inject constructor(
     }
 
 
-    private fun getNutritionResponseFlow(recipe: Recipe): Flow<Resource<NutritionResponse>> {
+     fun getNutritionResponseFlow(recipe: Recipe): Flow<Resource<NutritionResponse>> {
 
 
         return flow {
