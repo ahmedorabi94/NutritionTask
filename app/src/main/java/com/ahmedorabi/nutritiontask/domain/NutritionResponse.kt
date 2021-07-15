@@ -16,9 +16,9 @@ data class NutritionResponse (
    @SerializedName("healthLabels") val healthLabels : List<String>,
    @SerializedName("cautions") val cautions : List<String>,
 
-   @SerializedName("totalNutrients") val totalNutrients : TotalNutrients?,
-   @SerializedName("totalDaily") val totalDaily : TotalDaily?,
+   @SerializedName("totalNutrients") val totalNutrients : TotalNutrients,
+   @SerializedName("totalDaily") val totalDaily : TotalDaily,
    @SerializedName("ingredients") val ingredients : List<Ingredients?>,
-   @SerializedName("totalNutrientsKCal") val totalNutrientsKCal : TotalNutrientsKCal?
+   @SerializedName("totalNutrientsKCal") val totalNutrientsKCal : TotalNutrientsKCal
 
 ) : Parcelable

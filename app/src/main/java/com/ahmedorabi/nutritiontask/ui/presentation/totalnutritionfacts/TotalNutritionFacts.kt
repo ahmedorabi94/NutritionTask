@@ -60,31 +60,31 @@ class TotalNutritionFacts : Fragment() {
 
 
 
-//            if (it.totalNutrients.FIBTG != null) {
-//                binding.fiberName.text =
-//                    "${it.totalNutrients.FIBTG?.label ?: ""} ${it.totalNutrients.FIBTG?.quantity?.getRoundFloat()} ${it.totalNutrients.FIBTG?.unit ?: ""}"
-//            } else {
-//                binding.fiberName.text =
-//                    "${"Dietary Fiber"} ${"-"}"
-//            }
-//
-//
-//            if (it.totalDaily.FIBTG != null) {
-//                binding.fiberValueTv.text =
-//                    "${it.totalDaily.FIBTG?.quantity?.roundToInt()} ${it.totalDaily.FIBTG?.unit ?: ""}"
-//            } else {
-//                binding.fiberValueTv.text =
-//                    "-"
-//            }
-//
-//            if (it.totalNutrients.SUGAR != null) {
-//                binding.sugarsName.text =
-//                    "${it.totalNutrients.SUGAR?.label ?: ""} ${it.totalNutrients.SUGAR?.quantity?.getRoundFloat()} ${it.totalNutrients.SUGAR?.unit ?: ""}"
-//
-//            } else {
-//                binding.sugarsName.text =
-//                    "${"Total Sugars"} ${"-"}"
-//            }
+            if (it.totalNutrients.FIBTG != null) {
+                binding.fiberName.text =
+                    "${it.totalNutrients.FIBTG?.label ?: ""} ${it.totalNutrients.FIBTG?.quantity?.getRoundFloat()} ${it.totalNutrients.FIBTG?.unit ?: ""}"
+            } else {
+                binding.fiberName.text =
+                    "${"Dietary Fiber"} ${"-"}"
+            }
+
+
+            if (it.totalDaily.FIBTG != null) {
+                binding.fiberValueTv.text =
+                    "${it.totalDaily.FIBTG?.quantity?.roundToInt()} ${it.totalDaily.FIBTG?.unit ?: ""}"
+            } else {
+                binding.fiberValueTv.text =
+                    "-"
+            }
+
+            if (it.totalNutrients.SUGAR != null) {
+                binding.sugarsName.text =
+                    "${it.totalNutrients.SUGAR?.label ?: ""} ${it.totalNutrients.SUGAR?.quantity?.getRoundFloat()} ${it.totalNutrients.SUGAR?.unit ?: ""}"
+
+            } else {
+                binding.sugarsName.text =
+                    "${"Total Sugars"} ${"-"}"
+            }
 
 
         }

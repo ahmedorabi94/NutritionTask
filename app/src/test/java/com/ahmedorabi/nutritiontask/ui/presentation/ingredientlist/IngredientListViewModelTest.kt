@@ -6,8 +6,7 @@ import com.ahmedorabi.nutritiontask.TestCoroutineRule
 import com.ahmedorabi.nutritiontask.data.api.ErrorResponse
 import com.ahmedorabi.nutritiontask.data.api.Resource
 import com.ahmedorabi.nutritiontask.data.api.ResultWrapper
-import com.ahmedorabi.nutritiontask.domain.NutritionResponse
-import com.ahmedorabi.nutritiontask.domain.Recipe
+import com.ahmedorabi.nutritiontask.domain.*
 import com.ahmedorabi.nutritiontask.usecases.GetNutritionUseCase
 import com.nhaarman.mockitokotlin2.doReturn
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -42,16 +41,76 @@ class IngredientListViewModelTest {
     private lateinit var useCase: GetNutritionUseCase
 
 
+    private val totalDaily = TotalDaily(
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    )
+    private val totalNutrients = TotalNutrients(
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    )
+    private val totalNutrientsKCal = TotalNutrientsKCal(null, null, null, null)
+
     private val nutritionResponse = NutritionResponse(
         "null", 2, 3, 10, 1.0, emptyList(), emptyList(),
-        emptyList(), null, null, emptyList(), null
+        emptyList(), totalNutrients, totalDaily, emptyList(), totalNutrientsKCal
     )
 
 
     @Before
     fun setup() {
-        //   MockitoAnnotations.initMocks(this)
-
         viewModel = IngredientListViewModel(useCase)
     }
 

@@ -7,9 +7,9 @@ import kotlinx.android.parcel.Parcelize
 @Parcelize
 data class TotalNutrientsKCal (
 
-   @SerializedName("ENERC_KCAL") var ENERCKCAL : DefaultNutrients,
-   @SerializedName("PROCNT_KCAL") var PROCNTKCAL : DefaultNutrients,
-   @SerializedName("FAT_KCAL") var FATKCAL : DefaultNutrients,
-   @SerializedName("CHOCDF_KCAL") var CHOCDFKCAL : DefaultNutrients
+   @SerializedName("ENERC_KCAL") var ENERCKCAL : DefaultNutrients?,
+   @SerializedName("PROCNT_KCAL") var PROCNTKCAL : DefaultNutrients?,
+   @SerializedName("FAT_KCAL") var FATKCAL : DefaultNutrients?,
+   @SerializedName("CHOCDF_KCAL") var CHOCDFKCAL : DefaultNutrients?
 
 ) : Parcelable

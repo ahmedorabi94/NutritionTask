@@ -53,26 +53,36 @@ class NutritionRepositoryImplTest {
 
     }
 
-    @Test
-    fun `should get user details`() = runBlocking {
-
-        val nutritionResponse = NutritionResponse(
-            "null", 2, 3, 10, 1.0, emptyList(), emptyList(),
-            emptyList(), null, null, emptyList(), null
-        )
-
-
-        val result = ResultWrapper.Success(
-            nutritionResponse
-        )
-
-//        doReturn(nutritionResponse)
-//            .`when`(apiService)
-//            .getNutritionResponseAsync(
-//                "123", "5", Recipe(ArrayList())
-//            )
-
-//        val apiService = mock<ApiService>() {
+//    @Test
+//    fun `should get user details`() = runBlocking {
+//
+//        val nutritionResponse = NutritionResponse(
+//            "null", 2, 3, 10, 1.0, emptyList(), emptyList(),
+//            emptyList(), null, null, emptyList(), null
+//        )
+//
+//
+//        val result = ResultWrapper.Success(
+//            nutritionResponse
+//        )
+//
+////        doReturn(nutritionResponse)
+////            .`when`(apiService)
+////            .getNutritionResponseAsync(
+////                "123", "5", Recipe(ArrayList())
+////            )
+//
+////        val apiService = mock<ApiService>() {
+////            onBlocking {
+////                getNutritionResponseAsync(
+////                    "1",
+////                    "2",
+////                    Recipe(ArrayList())
+////                )
+////            } doReturn nutritionResponse
+////        }
+//
+//        apiService.stub {
 //            onBlocking {
 //                getNutritionResponseAsync(
 //                    "1",
@@ -81,42 +91,32 @@ class NutritionRepositoryImplTest {
 //                )
 //            } doReturn nutritionResponse
 //        }
-
-        apiService.stub {
-            onBlocking {
-                getNutritionResponseAsync(
-                    "1",
-                    "2",
-                    Recipe(ArrayList())
-                )
-            } doReturn nutritionResponse
-        }
-
-     //   repository = NutritionRepositoryImpl(apiService)
-
-        val reee =  repository.getNutritionResponseTes(Recipe(ArrayList())).toList()
-
-        //assertEquals(reee.calories , 3)
-
-        assertEquals(reee,nutritionResponse)
-
-
-         Unit
-//        // Test & Verify
-//      val flow = repository.getNutritionResponseTes(Recipe(ArrayList()))
+//
+//     //   repository = NutritionRepositoryImpl(apiService)
+//
+//        val reee =  repository.getNutritionResponseTes(Recipe(ArrayList())).toList()
+//
+//        //assertEquals(reee.calories , 3)
+//
+//        assertEquals(reee,nutritionResponse)
 //
 //
-//
-//
-//        flow.collect { data ->
-//
-//            //   val result = data.calories
-//
-//            assertEquals(data.calories, 3)
-//
-//            //   data `should equal` result
-//        }
-    }
+//         Unit
+////        // Test & Verify
+////      val flow = repository.getNutritionResponseTes(Recipe(ArrayList()))
+////
+////
+////
+////
+////        flow.collect { data ->
+////
+////            //   val result = data.calories
+////
+////            assertEquals(data.calories, 3)
+////
+////            //   data `should equal` result
+////        }
+//    }
 
 
 }
