@@ -1,6 +1,12 @@
 # NutritionTask
 Nutrition Analysis is an application designed to analyze any recipe and get a detailed nutrition data about it
 
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/7644709/125868420-234d0825-0fcb-4b42-bc18-5d5de822cb24.jpg" width="250px" /> 
+  <img src="https://user-images.githubusercontent.com/7644709/125868427-efa5f111-2a7f-4a53-abc7-156c1336b0ab.jpg" width="250px" />  
+  <img src="https://user-images.githubusercontent.com/7644709/125868429-9a908787-70b7-4cda-a1d0-9acf6b6340d2.jpg" width="250px" />  
+
+</div>
 
 
 
