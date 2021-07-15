@@ -1,6 +1,6 @@
 package com.ahmedorabi.nutritiontask.uils
 
-import com.ahmedorabi.nutritiontask.data.model.Recipe
+import com.ahmedorabi.nutritiontask.domain.Recipe
 import timber.log.Timber
 import kotlin.math.roundToInt
 

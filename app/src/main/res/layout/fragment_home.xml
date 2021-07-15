@@ -7,7 +7,7 @@
         android:id="@+id/homeFragmentId"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.home.HomeFragment">
+        tools:context="com.ahmedorabi.nutritiontask.ui.presentation.home.HomeFragment">
 
 
         <com.google.android.material.textfield.TextInputEditText

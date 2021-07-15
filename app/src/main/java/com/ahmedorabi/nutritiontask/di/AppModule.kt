@@ -2,6 +2,8 @@ package com.ahmedorabi.nutritiontask.di
 
 import com.ahmedorabi.nutritiontask.BuildConfig.DEBUG
 import com.ahmedorabi.nutritiontask.data.api.ApiService
+import com.ahmedorabi.nutritiontask.data.repo.NutritionDataSource
+import com.ahmedorabi.nutritiontask.data.repo.NutritionRepositoryImpl
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import dagger.Module
@@ -22,7 +24,6 @@ object AppModule {
 
     @Provides
     fun provideGson(): Gson {
-
         return GsonBuilder().create()
     }
 
@@ -64,5 +65,10 @@ object AppModule {
         return retrofit.create(ApiService::class.java)
     }
 
+    @Singleton
+    @Provides
+    fun provideNutritionDataSource(apiService: ApiService): NutritionDataSource {
+        return NutritionRepositoryImpl(apiService)
+    }
 
 }

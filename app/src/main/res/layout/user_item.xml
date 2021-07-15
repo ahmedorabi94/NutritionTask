@@ -6,15 +6,15 @@
 
         <variable
             name="item"
-            type="com.ahmedorabi.nutritiontask.data.model.Parsed" />
+            type="com.ahmedorabi.nutritiontask.domain.Parsed" />
 
         <variable
             name="callback"
-            type="com.ahmedorabi.nutritiontask.ui.adapter.RecipeCallback" />
+            type="com.ahmedorabi.nutritiontask.ui.presentation.adapter.RecipeCallback" />
 
         <variable
             name="viewmodel"
-            type="com.ahmedorabi.nutritiontask.ui.ingredientlist.IngredientListViewModel" />
+            type="com.ahmedorabi.nutritiontask.ui.presentation.ingredientlist.IngredientListViewModel" />
 
     </data>
 

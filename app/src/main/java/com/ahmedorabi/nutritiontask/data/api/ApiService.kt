@@ -1,7 +1,7 @@
 package com.ahmedorabi.nutritiontask.data.api
 
-import com.ahmedorabi.nutritiontask.data.model.NutritionResponse
-import com.ahmedorabi.nutritiontask.data.model.Recipe
+import com.ahmedorabi.nutritiontask.domain.NutritionResponse
+import com.ahmedorabi.nutritiontask.domain.Recipe
 import retrofit2.http.*
 
 interface ApiService {

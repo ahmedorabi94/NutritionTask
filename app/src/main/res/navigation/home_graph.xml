@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.ahmedorabi.nutritiontask.ui.home.HomeFragment"
+        android:name="com.ahmedorabi.nutritiontask.ui.presentation.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/ingredientListFragment"
-        android:name="com.ahmedorabi.nutritiontask.ui.ingredientlist.IngredientListFragment"
+        android:name="com.ahmedorabi.nutritiontask.ui.presentation.ingredientlist.IngredientListFragment"
         android:label="UserDetailFragment" >
         <action
             android:id="@+id/action_userDetailFragment_to_totalNutritionFacts"
@@ -24,6 +24,6 @@
     </fragment>
     <fragment
         android:id="@+id/totalNutritionFacts"
-        android:name="com.ahmedorabi.nutritiontask.ui.totalnutritionfacts.TotalNutritionFacts"
+        android:name="com.ahmedorabi.nutritiontask.ui.presentation.totalnutritionfacts.TotalNutritionFacts"
         android:label="TotalNutritionFacts" />
 </navigation>

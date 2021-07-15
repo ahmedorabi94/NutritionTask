@@ -10,16 +10,16 @@
 
         <variable
             name="totalDaily"
-            type="com.ahmedorabi.nutritiontask.data.model.TotalDaily" />
+            type="com.ahmedorabi.nutritiontask.domain.TotalDaily" />
 
         <variable
             name="totalNutrient"
-            type="com.ahmedorabi.nutritiontask.data.model.TotalNutrients" />
+            type="com.ahmedorabi.nutritiontask.domain.TotalNutrients" />
 
 
         <variable
             name="nutritionResponse"
-            type="com.ahmedorabi.nutritiontask.data.model.NutritionResponse" />
+            type="com.ahmedorabi.nutritiontask.domain.NutritionResponse" />
     </data>
 
 
@@ -32,7 +32,7 @@
             android:id="@+id/totalNutritionFactsId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:context=".ui.totalnutritionfacts.TotalNutritionFacts">
+            tools:context="com.ahmedorabi.nutritiontask.ui.presentation.totalnutritionfacts.TotalNutritionFacts">
 
             <TextView
                 android:id="@+id/title"
