@@ -17,6 +17,7 @@ import com.ahmedorabi.nutritiontask.data.model.Recipe
 import com.ahmedorabi.nutritiontask.databinding.FragmentIngredientListBinding
 import com.ahmedorabi.nutritiontask.ui.adapter.RecipeAdapter
 import com.ahmedorabi.nutritiontask.ui.adapter.RecipeCallback
+import com.ahmedorabi.nutritiontask.uils.EspressoIdlingResource
 import dagger.hilt.android.AndroidEntryPoint
 import timber.log.Timber
 
@@ -59,6 +60,7 @@ class IngredientListFragment : Fragment() {
 
 
         foodText?.let {
+            EspressoIdlingResource.increment()
             viewModel.foodText.value = it
         }
 
@@ -95,6 +97,7 @@ class IngredientListFragment : Fragment() {
                             binding.progressbar.visibility = View.GONE
                             binding.recyclerViewMain.visibility = View.VISIBLE
 
+                            EspressoIdlingResource.decrement()
                             val adapter = RecipeAdapter(callback, viewModel)
                             adapter.submitList(arrlist)
                             binding.recyclerViewMain.adapter = adapter
