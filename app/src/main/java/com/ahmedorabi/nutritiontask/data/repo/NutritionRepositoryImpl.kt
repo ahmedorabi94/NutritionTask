@@ -34,25 +34,4 @@ class NutritionRepositoryImpl @Inject constructor(private val apiService: ApiSer
     }
 
 
-     suspend fun getNutritionResponseTes(recipe: Recipe): Flow<NutritionResponse> {
-
-
-        return flow {
-
-            emit(
-
-                    apiService.getNutritionResponseAsync(
-                        AppConstants.APP_ID,
-                        AppConstants.API_KEY,
-                        recipe
-                    )
-
-
-            )
-
-
-        }.flowOn(Dispatchers.IO)
-    }
-
-
 }
