@@ -1,6 +1,12 @@
 # NutritionTask
 Nutrition Analysis is an application designed to analyze any recipe and get a detailed nutrition data about it
 
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/7644709/125868420-234d0825-0fcb-4b42-bc18-5d5de822cb24.jpg" width="250px" /> 
+  <img src="https://user-images.githubusercontent.com/7644709/125868704-e8d2b764-7fdb-44e7-9cbd-2abbdcf73dcd.jpg" width="250px" />  
+  <img src="https://user-images.githubusercontent.com/7644709/125868429-9a908787-70b7-4cda-a1d0-9acf6b6340d2.jpg" width="250px" />  
+
+</div>
 
 
 
@@ -27,4 +33,4 @@ Nutrition Analysis is an application designed to analyze any recipe and get a de
   - MVVM Architecture (View - DataBinding - ViewModel - Model)
   - Repository pattern
   - Clean Architecture approach.
-![final-architecture](https://user-images.githubusercontent.com/7644709/94259993-b2691b80-ff2f-11ea-8bff-cc4ed3c8b6d9.png)
+![final-architecture](https://user-images.githubusercontent.com/7644709/125865695-fb0febb2-5329-4347-80ab-645d86e951c2.png))
