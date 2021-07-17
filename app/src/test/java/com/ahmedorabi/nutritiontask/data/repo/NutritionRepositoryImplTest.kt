@@ -5,6 +5,7 @@ import com.ahmedorabi.nutritiontask.TestCoroutineRule
 import com.ahmedorabi.nutritiontask.data.api.ApiService
 import com.ahmedorabi.nutritiontask.data.api.ResultWrapper
 import com.ahmedorabi.nutritiontask.domain.*
+import com.ahmedorabi.nutritiontask.ui.framework.ApiNutritionDataSource
 import com.ahmedorabi.nutritiontask.uils.AppConstants
 import com.nhaarman.mockitokotlin2.doReturn
 import junit.framework.Assert.assertEquals
@@ -38,7 +39,7 @@ class NutritionRepositoryImplTest {
     lateinit var apiService: ApiService
 
 
-    private lateinit var repository: NutritionRepositoryImpl
+    private lateinit var repository: ApiNutritionDataSource
 
 
     private val totalDaily = TotalDaily(
@@ -111,7 +112,7 @@ class NutritionRepositoryImplTest {
     @Before
     fun setup() {
 
-        repository = NutritionRepositoryImpl(apiService)
+        repository = ApiNutritionDataSource(apiService)
 
     }
 

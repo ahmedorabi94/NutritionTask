@@ -2,8 +2,9 @@ package com.ahmedorabi.nutritiontask.di
 
 import com.ahmedorabi.nutritiontask.BuildConfig.DEBUG
 import com.ahmedorabi.nutritiontask.data.api.ApiService
-import com.ahmedorabi.nutritiontask.data.repo.NutritionDataSource
-import com.ahmedorabi.nutritiontask.data.repo.NutritionRepositoryImpl
+import com.ahmedorabi.nutritiontask.data.repo.NutritionRepository
+import com.ahmedorabi.nutritiontask.ui.framework.ApiNutritionDataSource
+import com.ahmedorabi.nutritiontask.usecases.GetNutritionUseCase
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import dagger.Module
@@ -65,10 +66,30 @@ object AppModule {
         return retrofit.create(ApiService::class.java)
     }
 
+//    @Singleton
+//    @Provides
+//    fun provideNutritionDataSource(apiService: ApiService): NutritionDataSource {
+//        return NutritionRepositoryImpl(apiService)
+//    }
+
     @Singleton
     @Provides
-    fun provideNutritionDataSource(apiService: ApiService): NutritionDataSource {
-        return NutritionRepositoryImpl(apiService)
+    fun provideInApiNutritionDataSource(apiService: ApiService): ApiNutritionDataSource {
+        return ApiNutritionDataSource(apiService)
     }
+
+    @Singleton
+    @Provides
+    fun provideNutritionRepository(apiNutritionDataSource: ApiNutritionDataSource): NutritionRepository {
+        return NutritionRepository(apiNutritionDataSource)
+    }
+
+
+    @Singleton
+    @Provides
+    fun provideUseCase(nutritionRepository: NutritionRepository): GetNutritionUseCase {
+        return GetNutritionUseCase(nutritionRepository)
+    }
+
 
 }
